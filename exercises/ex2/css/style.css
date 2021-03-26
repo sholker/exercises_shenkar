@@ -265,21 +265,8 @@ article{
 
 }
 
-.rectangle {
-    height: 118px;
-    width: 255px;
-    background-color: #ffffff;
-    color: black;
-    top: 1474px;
-    margin-left: 50px;
-    padding-top: 97px;
-    margin-top: 145px;
-    display: inline-block;
-    line-height: 34px;
-    text-align: center;
-}
 
-.rec2 {
+.rec {
     height: 91px;
     width: 255px;
     background-color: #ffffff;
