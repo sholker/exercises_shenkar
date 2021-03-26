@@ -231,9 +231,13 @@ article{
     font-weight: 600;
     font-size: 36px;
     line-height: 43px;
-
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
     color: #000000;
 }
+
 .rectangle_pic {
     top:20px;
     height: 226px;
@@ -247,20 +251,7 @@ article{
     background: #FFFFFF;
 }
 
-.rectangle1 {
-    height: 216px;
-    width: 255px;
-    background-color: #ffffff;
-    left: 50px;
-    top: 1474px;
-    margin-left: 50px;
-    margin-top: 120px;
-    padding-top: 11px;
-    display: inline-block;
-    line-height: 35px;
-    text-align: center;
 
-}
 
 
 
@@ -274,7 +265,40 @@ article{
 
 }
 
+.rectangle {
+    height: 118px;
+    width: 255px;
+    background-color: #ffffff;
+    color: black;
+    top: 1474px;
+    margin-left: 50px;
+    padding-top: 97px;
+    margin-top: 145px;
+    display: inline-block;
+    line-height: 34px;
+    text-align: center;
+}
 
+.rec2 {
+    height: 91px;
+    width: 255px;
+    background-color: #ffffff;
+    left: 50px;
+    top: 1474px;
+    margin-left: 50px;
+    margin-top: 123px;
+    padding-top: 141px;
+    display: inline-block;
+    line-height: 13px;
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    color: #000000;
+        font-weight: bold;
+
+}
 
 .smallicon{
     position: absolute;
@@ -305,4 +329,30 @@ footer{
 }
 .icon{
     margin-right: 20px;
+}
+.text {
+    width: 113px;
+    height: 22px;
+    left: 121px;
+    top: 1613px;
+
+    font-family: Lato;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 22px;
+    /* identical to box height */
+
+    text-align: center;
+
+    color: #101010;
+
+}
+#tools{
+    background: #FFFFFF;
+    display: flex;
+    width: 1110px;
+    justify-content: space-between;
+    margin-top: 56px;
+    margin-left: 50px;
 }
