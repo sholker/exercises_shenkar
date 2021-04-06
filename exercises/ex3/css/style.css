@@ -1,0 +1,140 @@
+*{
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+}
+header{
+    background: cornsilk;
+    height: 192px;
+}
+#logo {
+    background-image: url(../images/logo.png);
+    position: relative;
+    width: 88px;
+    height: 83px;
+    align-items: center;
+    top: 50px;
+    margin: 0px auto;
+    display: block;
+    background-repeat: no-repeat;
+    align-content: center;
+    /* line-height: 50px; */
+}
+nav{
+    height: 80px;
+    background: black;
+
+}
+nav>div>section {
+    /* height: 80px; */
+    width: 236px;
+    text-align: center;
+    display: block;
+    position: relative;
+    margin-left: 10%;
+    /* float: left; */
+}
+a{
+    text-decoration: none;
+    color:#ffffff;
+    align-self: center;
+}
+a:hover{
+    color: #686868;
+}
+#selected{
+    background: aquamarine;
+    color: black;
+    /*height: 80px;*/
+    width:235px auto;
+    height: 40px auto;
+    text-align: center;
+    /*line-height: 80px;*/
+}
+
+
+
+.bar {
+    display: flex;
+    margin: 10px;
+    width: auto;
+    height: 40px;
+    width: 236px;
+}
+
+.layout {
+    /* height: 80px; */
+    line-height: -9px;
+    align-items: center;
+    margin: 20%;
+}
+        section:hover{
+    background: #ED4C5C;
+        color: #686868;
+}
+
+main{
+    background: #FFFFFF;
+    display: block;
+    width: 70%;
+    height: 756px;
+    float: left;
+}
+aside {
+    width: 30%;
+    background-color: cornsilk;
+    display: block;
+    float: left;
+    height: 756px;
+}
+
+.container_1 {
+    margin: 20px auto;
+    margin-left: 8%;
+    width: 400px;
+    background-color: #fff;
+    display: grid;
+    grid-template-columns: 135px 140px;
+    grid-row: auto auto;
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+    float: left;
+}
+.container_2{
+    margin: 375px auto;
+    width: 322px;
+    background-color: #fff;
+    display: grid;
+    grid-template-columns: 135px 140px;
+    grid-row: auto auto;
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+    float: right;
+}
+  .box{
+    background-color: darkcyan;
+    padding:20px;
+    width: 100px;
+    height: 100px;
+
+    align-items:center;
+    justify-content:center;
+
+  }
+  #rectangle{
+      margin: 40%;
+      margin-left: 35%;
+      left: 40px auto;
+      top: 30px auto;
+      width: 150px;
+      height: 60px;
+      top: auto;
+  }
+
+
+footer {
+    height: 50px;
+    display: block;
+    background-color: burlywood;
+    position: relative;
+    top: 705px;
+}
