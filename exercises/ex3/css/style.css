@@ -56,8 +56,8 @@ section.boxes > section{
     margin: 17px;
 }
 
-.selected{
-    background-color: #b0eeff;
+.selected {
+    background-color: #094773;
 }
 
 .menu{
@@ -92,6 +92,25 @@ section.main{
 }
 
 
+.vertical-menu > ul{
+    width: 146px;
+}
+
+.vertical-menu > ul> li{
+    padding-top: 20px;
+    padding-bottom:20px;
+    padding-left: 7px;
+}
+/*li.vertical-menu{*/
+
+/*  margin-top: 5%;*/
+/*  display: inline-block;*/
+/*  color: white;*/
+/*  text-align: center;*/
+/*  wight: 235px;*/
+/*  padding: 16px 101px;*/
+/*  text-decoration: none;*/
+/*}*/
 
 
 aside{
@@ -124,73 +143,17 @@ footer{
     margin: 0px auto;
 }
 
-.nav2 > ul{
+.vertical-menu > ul{
     width: 146px;
 }
 
-.nav2 > ul> li{
+.vertical-menu > ul> li{
     padding-top: 20px;
     padding-bottom:20px;
     padding-left: 7px;
+
 }
 
-section.first{
-    background-color: rgb(228, 227, 227);
-    width:257px;
-    height: 758px;
-    position: relative;
-}
-
-section.squares > section{
-    background-color:darkgreen;
-}
-
-section.squares{
-    display: flex;
-    flex-wrap: wrap;
-    width: 270px;
-    height: 117px;
-    position: absolute;
-    left: -6px;
-    top: 495px;
-}
-
-section.second{
-    position: relative;
-    width: 596px;
-    height: 758px;
-}
-
-section.box{
-    width: 270px;
-    background-color:darkgreen;
-    position: absolute;
-}
-
-section.box1
-{
-    height:322px;
-    left: 22px;
-    top: 22px;
-}
-
-section.box2{
-    height:412px;
-    left: 22px;
-    top: 370px;
-}
-
-section.box3{
-    height:255px;
-    left: 308px;
-    top: 22px;
-}
-
-section.box4{
-    height:364px;
-    left: 308px;
-    top: 300px;
-}
 
 .container_1 {
     margin: 9px auto;
@@ -200,11 +163,6 @@ section.box4{
     display: grid;
     grid-template-columns: 135px 140px;
     grid-row: auto auto;
-    /* grid-column-gap: 20px; */
-    /* grid-row-gap: 20px; */
-    /*float: left;*/
-    /* display: flex; */
-    /* flex-wrap: wrap; */
     position: absolute;
 
 }
