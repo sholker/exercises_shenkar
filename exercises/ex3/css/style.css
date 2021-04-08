@@ -20,7 +20,9 @@ header, main, footer nav, aside,div{
 #wrapper {
     width: 1000px;
     margin: 0px auto;
+    display: flex;
 }
+
 
 header{
     background-color: #ffeefb;
@@ -140,13 +142,6 @@ aside>div.cube{
 
 
 
-/*****************************************/
-
-#wrapper2{
-    display: flex;
-    width: 1000px;
-    margin: 0px auto;
-}
 
 .vertical-menu > ul{
     width: 146px;
