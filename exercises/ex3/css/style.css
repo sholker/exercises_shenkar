@@ -13,7 +13,7 @@ a{
 }
 
 
-header, main, footer nav, aside,section{
+header, main, footer nav, aside,div{
     display: block;
 }
 
@@ -49,7 +49,7 @@ ul{
 
 }
 
-section.boxes > section{
+div.boxes > div{
     height: 100px;
     width: 100px;
     background-color: #ffaff4;
@@ -84,7 +84,7 @@ main{
     display: flex;
 }
 
-section.main{
+div.main{
     display: flex;
     position: relative;
     height: 697px;
@@ -185,6 +185,70 @@ footer{
 
   }
 
+  div.group1{
+    background-color: #07213b;
+    width:257px;
+    height: 758px;
+    position: relative;
+}
+
+div.squares > div{
+    background-color:darkcyan;
+}
+
+div.squares{
+    display: flex;
+    flex-wrap: wrap;
+    width: 270px;
+    height: 117px;
+    position: absolute;
+    left: -6px;
+    top: 495px;
+}
+
+div.group2{
+    position: relative;
+    width: 596px;
+    height: 758px;
+}
+
+div.box{
+    width: 270px;
+    background-color:darkcyan;
+    position: absolute;
+}
+
+div.box1
+{
+    height:322px;
+    left: 22px;
+    top: 22px;
+}
+
+div.box2{
+    height:412px;
+    left: 22px;
+    top: 370px;
+    z-index: -1;
+
+}
+
+div.box3{
+    height:255px;
+    left: 308px;
+    top: 22px;
+}
+
+div.box4{
+    height:364px;
+    left: 308px;
+    top: 300px;
+}
+
+
+
+
 .footer{
     position: fixed;
+
 }
