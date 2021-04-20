@@ -301,6 +301,7 @@ footer{
 }
 
 .grid {
+
     margin: 0;
     padding: 0;
     border: none;
@@ -309,6 +310,7 @@ footer{
 }
 
 #plus{
+    pointer-events: all;
     background-image: url(../images/plus.svg);
     background-repeat: no-repeat;
     width: 30%;
@@ -327,6 +329,8 @@ footer{
     height: 84px;
     margin-left: auto;
 }
+
+
 img {
     max-width: 100%;
     max-height: 100%;
