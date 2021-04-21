@@ -20,7 +20,9 @@ header, main, footer nav, aside,div{
 #wrapper {
     width: 1000px;
     margin: 0px auto;
+    display: flex;
 }
+
 
 header{
     background-color: #ffeefb;
@@ -140,17 +142,7 @@ aside>div.cube{
 
 
 
-/*****************************************/
 
-#wrapper2{
-    display: flex;
-    width: 1000px;
-    margin: 0px auto;
-}
-
-.vertical-menu > ul{
-    width: 146px;
-}
 .vertical-menu > ul{
     width: 146px;
 }
@@ -161,17 +153,11 @@ aside>div.cube{
     padding-left: 7px;
 }
 
-.vertical-menu > ul> li{
-    padding-top: 20px;
-    padding-bottom:20px;
-    padding-left: 7px;
-
-}
 
 
 
 div.group1{
-    background-color: #094773;
+    background-color: lightsteelblue;
     width:257px;
     height: 758px;
     position: relative;
@@ -206,13 +192,13 @@ div.box{
 div.box1
 {
     height:322px;
-    left: 22px;
-    top: 22px;
+    left: 20px;
+    top: 20px;
 }
 
 div.box2{
     height:412px;
-    left: 22px;
+    left: 20px;
     top: 370px;
     z-index: -1;
 
@@ -221,7 +207,7 @@ div.box2{
 div.box3{
     height:255px;
     left: 308px;
-    top: 22px;
+    top: 20px;
 }
 
 div.box4{
@@ -237,5 +223,3 @@ footer{
     width: 100%;
     position: absolute;
 }
-
-
