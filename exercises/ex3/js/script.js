@@ -89,18 +89,14 @@ function add_box(){
     color_boxes();
 };
 
-$(document).ready(function() {
-    str = "shai"
-    createGrid(str.length*2);
 
-    $(".grid").click(function() {
-         var plus_found = false;
+
+$(document).on('click', '.grid', function(){
+     var plus_found = false;
 
          $(this).find("div[id^=plus]").each(function() {
               add_box();
               plus_found = true;
-
-
              return;
       });
 
@@ -118,42 +114,15 @@ $(document).ready(function() {
             $(this).css("background-color", random_color());
         }
     }
-        });
+
+});
 
 
 
-})
 
-// $(document).click(function() {
-//
-//
-//     $(".grid").click(function() {
-//          var plus_found = false;
-//
-//          $(this).find("div[id^=plus]").each(function() {
-//               add_box();
-//               plus_found = true;
-//
-//
-//              return;
-//       });
-//
-//
-//
-//     if( !plus_found )
-//     {
-//         if ($(this).attr('id') != 'theImg') {
-//
-//             $(this).css("background-color", "white");
-//             $(this).attr('id', 'theImg');
-//         }
-//         else {
-//             $(this).removeAttr('id');
-//             $(this).css("background-color", random_color());
-//         }
-//     }
-//         });
-//
-//
-//
-// });
+$(document).ready(function() {
+    str = "shai"
+    createGrid(str.length*2);
+
+
+});
