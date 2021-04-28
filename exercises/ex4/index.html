@@ -1,0 +1,165 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Ori Shinsholker</title>
+    <link href="https://fonts.googleapis.com/css?family=Lato:400i" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="js/script.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.2/TweenMax.min.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/@coreui/coreui/dist/css/coreui.min.css" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+</head>
+<body>
+
+<audio controls autoplay loop preload="auto" style="display: none;">
+    <source src="audio\Pokémon.mp3" type="audio/mpeg">
+</audio>
+
+
+
+
+<!-- Start Main Container -->
+<div class="main-container">
+
+    <!-- Start Pokemon Ball Top Part -->
+    <div class="pokemon-top-part"></div>
+
+    <!-- End Pokemon Ball Top Part -->
+    <!-- Start Main Forms -->
+    <div class="main-forms">
+        <div id="space"></div>
+        <div class="signup-form">
+
+            <form method="get" autocomplete="on" class="sign-back" name="form1" action="http://se.shenkar.ac.il/teach/web1/2021/get_form3.php">
+
+                <h1>Pokémon Form</h1>
+                <div class="signup-row">
+                    <i class="fa fa-user"></i>
+                    <input type="text" name="fullName" value="" placeholder="Pokemon's Name">
+                    <span class="error">*</span>
+                </div>
+
+
+                <div  class="signup-row">
+                    <i class="fa fa-key"></i>
+                    <input type="password" name="pass" value="" placeholder="Pokemon's secret word">
+                </div>
+                <div class="signup-row">
+                    <i class="fa fa-envelope-o"></i>
+                    <input type="email" name="mail" value="" placeholder="Trainer's EMAIL">
+                </div>
+
+                <div class="signup-row">
+                    <i class="fa fa-globe"></i>
+                    <input type="url" name="website" value="" placeholder="Pokemon's Information Website">
+                </div>
+
+                <div class="signup-row">
+                    <i class="fa fa-phone"></i>
+                    <input type="tel" name="phone" id="phone" placeholder="Trainer's Phone">
+
+                </div>
+                <div class="signup-row">
+                    <i class="fa fa-apple"></i>
+                    <input type="number" name="coffee" id="coffe" placeholder="Berries Per Meal">
+                </div>
+
+
+                <div class="signup-row">
+                    <i class="fa fa-smile-o"> </i>
+                    <span>Attitude:</span>
+                    <br>
+                    <Input class="range" type="range" name="temper"  onChange="rangeSlide(this.value)" onmousemove="rangeSlide(this.value)" placeholder="Temp"></Input>
+                </div>
+
+                <div class="signup-row">
+                    <i class="fa fa-commenting"></i>
+                    <span>  Description:</span>
+                    <textarea name="address" rows="3" cols="30"></textarea>
+
+                </div>
+
+
+                <div class="signup-row">
+                    <i class="fa fa-star"></i>
+                    <span>Can Be Found In:</span>
+                    <br>
+                    <br>
+                    <lable>Kanto Region</lable>
+
+                    <input type="checkbox" class="form-styling" name="interests[]" value="Kanto Region">
+
+                    <lable>Johto Region</lable>
+                    <input type="checkbox" class="form-styling" name="interests[]" value="Johto Region">
+
+                    <lable>Hoenn Region</lable>
+                    <input type="checkbox" class="form-styling" name="interests[]" value="Hoenn Region">
+
+                    <lable>Sinnoh Region</lable>
+                    <input type="checkbox" class="form-styling" name="interests[]" value="Sinnoh Region">
+
+                </div>
+
+
+
+                <div class="signup-row">
+                    <i class="fa fa-mars"></i>
+
+                    <span class="gender">Gender:</span>
+                    <i class="fa fa-mars"></i>
+                    <br>
+                    <br>
+                    <label id="labelM">Male
+                        <input type="radio"  name="gender" value="male" id="inputRadioM">
+                    </label>
+
+                    <label id="labelF"> Female
+
+                        <input type="radio"  name="gender" value="female" checked="" id="inputRadioF">
+                    </label>
+                </div>
+                <div class="signup-row">
+                    <i class="fa fa-birthday-cak"></i>
+                    <span>Age:</span>
+
+                    <select id="dropdown" name="age" required>
+                        <option value="18">18</option>
+                        <option value="19">19</option>
+                        <option value="21">21</option>
+                        <option value="22">22</option>
+                        <option value="23">23</option>
+                        <option value="24" selected="">24</option>
+                    </select>
+                    <span class="error">*</span>
+
+                </div>
+                <lable class="error" id="messageErr"></lable>
+
+                <div class="signup-row">
+                    <!--                        <i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i>-->
+                    <button type="submit" name="submit" id="submit" class="btn btn-pill btn-dark submit-button" value="Submit" onclick="return validationForm();">Submit</button>
+
+                </div>
+
+            </form>
+        </div>
+    </div>
+    <!-- End Main Forms -->
+    <!-- Start Pokemon Ball Bottom Part -->
+    <div class="pokemon-bottom-part">
+        <div class="white-part"></div>
+        <div class="black-line"></div>
+    </div>
+    <!-- End Pokemon Ball Bottom Part -->
+</div>
+<!-- End Main Container -->
+<!-- Start Scripts -->
+<script type="text/javascript" src="jquery-1.11.3.min.js"></script>
+<script src="https://use.fontawesome.com/7dddae9ad9.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.2/TweenMax.min.js"></script>
+<!-- End Scripts -->
+</body>
+</html>
