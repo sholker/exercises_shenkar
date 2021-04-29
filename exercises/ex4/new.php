@@ -7,7 +7,9 @@ if ($_SERVER["REQUEST_METHOD"] == "GET") {
      if(strlen($name) + strlen($type) > 6){
          echo "The Item $name - $type is Added Enjoy";
      }
-    echo "New Item $name - $type Added";
+     else {
+         echo "New Item $name - $type Added";
+     }
 }
 
 ?>
