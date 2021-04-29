@@ -45,12 +45,12 @@ function validationForm() {
     var msg = "";
     var field_value = document.forms["form1"]["fullName"].value;
     if (field_value==""){
-        msg = "fullName is required";
+        msg = "Pokemon name is required";
         document.getElementById("messageErr").innerHTML = msg;
         return false;
     }
     if (field_value.indexOf(" ")==-1||field_value.length<3) {
-        msg="Full name must have least one space!\n";
+        msg="Pokemon name must include one space!\n";
         document.getElementById("messageErr").innerHTML = msg;
         return false;
     }
@@ -59,13 +59,13 @@ function validationForm() {
     var passRegex = new RegExp("^(((?=.*[a-z])(?=.*[A-Z]))|((?=.*[a-z])(?=.*[0-9]))|((?=.*[A-Z])(?=.*[0-9])))(?=.{6,})");
 
     if (field_value.length<8 || !passRegex.test(field_value)) {
-        msg="Password have to contain at least 8 charcters!\n";
+        msg="Pokemon's secret word must be 8 charcters or more, and include letters,number,and sign!\n";
         document.getElementById("messageErr").innerHTML = msg;
         return false
     }
     field_value = document.forms["form1"]["phone"].value;
     if (field_value.length>10 || field_value.length<9 || isNaN(field_value)) {
-        msg="Phone is between 9 to 10 digits without charcters!\n";
+        msg="Trainer's Phone number is between 9 to 10 digits without charcters!\n";
         document.getElementById("messageErr").innerHTML = msg;
         return false
     }
@@ -74,7 +74,7 @@ function validationForm() {
     console.log(field_value);
     if (field_value == 0){
 
-        msg="must check one interest!\n";
+        msg="Must check one Region at least!\n";
         document.getElementById("messageErr").innerHTML = msg;
         return false
     }
