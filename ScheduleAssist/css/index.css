@@ -21,7 +21,9 @@
     top: -383px;
     left: 449px;
 }
+#container{
 
+}
 
 
 
@@ -44,7 +46,7 @@ table{
 
 .tbl_tommorow{
 
-    top: 50%;
+    top: 30%;
 
     margin-left: 49%;
 }
@@ -57,6 +59,7 @@ table{
 .tbl_attention {
     background-color: #FF3823;
     opacity: 0.32;
+    height: 27%;
     margin-top: 17%;
 }
 .tbl_feedbacks{
@@ -137,24 +140,37 @@ tbody{
 
 @media only screen and (min-width:768px) and (max-width: 1024px) {
     .tbl_today{
-        top:35%;
-        margin-bottom: 60px;
-
+        top: 21%;
+        width: auto;
+        left: 20%;
     }
     .tbl_tommorow{
-        top:85%;
-        margin-bottom: 60px;
+
+        top: 78%;
+
+        left: 20%;
+
+        width: auto;
+
+        margin-left: 2%;
 
     }
-
+    #container{
+        height: 500px;
+        width: 300px;
+    }
     .tbl_attention{
         margin-bottom: 60px;
-
+        top: 0px;
+        left: 0px;
+        width: auto;
         visibility: hidden;
-
     }
 
     .tbl_feedbacks{
+        top: 0px;
+        left: 0px;
+        width: auto;
         visibility: hidden;
     }
     #star_r{
@@ -163,8 +179,14 @@ tbody{
         top:450px;
         left: 880px;
         margin-left: 2px;
+        top: 0px;
+        left: 0px;
+        visibility: hidden;
     }
     #star_r span{
+        top: 0px;
+        left: 0px;
+        visibility: hidden;
         display: inline-block;
         margin-left: 10px;
         padding: 0px;
@@ -176,21 +198,28 @@ tbody{
     }
     #top_right_title{
 
-        top: 85px;
-        margin-bottom: 60px;
+        left: -27%;
+
+        margin-top: 95%;
+
         width: 247px;
 
     }
     #bottom_left_title{
+        top: 0px;
+        left: 0px;
         visibility: hidden;
     }
 
     .bottom_right{
-
+        top: 0px;
+        left: 0px;
         visibility: hidden;
 
     }
     #bottom_right_title{
+        top: 0px;
+        left: 0px;
         visibility: hidden;
 
     }
@@ -205,5 +234,10 @@ tbody{
 
 
     }
+    /*html{*/
+    /*    height: 378px;*/
+    /*    width: 323px*/
+    /*;*/
+    /*}*/
 
 }

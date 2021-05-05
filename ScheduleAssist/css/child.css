@@ -6,11 +6,16 @@
     position: absolute;
     height: 620px;
     width: 1085px;
-    margin-left: 17px;
+    margin-left: 157px;
     background: #FFFFFF;
     border: 1px solid #000000;
     box-sizing: border-box;
-    top: 27%;
+    top: 23%;
+}
+#btBack{
+    margin-left: 90%;
+    position:absolute;
+    margin-top: -15%;
 }
 
 
@@ -25,7 +30,14 @@
         top:20px;
     }
     #description_child{
-
+        position: absolute;
+        height: auto;
+        width: 500px;
+        margin-left: 200px;
+        background: #FFFFFF;
+        border: 1px solid #000000;
+        box-sizing: border-box;
+        top: 23%;
     }
 
 

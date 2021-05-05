@@ -14,6 +14,27 @@
     border: 1px solid #000000;
     box-sizing: border-box;
 }
+.btn-block {
+    position: absolute;
+    top: 13%;
+    left: 17%;
+    text-align: center;
+}
+button {
+    width: 150px;
+    padding: 10px;
+    border: none;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    background-color: #095484;
+    font-size: 16px;
+    color: #fff;
+    cursor: pointer;
+}
+button:hover {
+    background-color: #0666a3;
+}
 
 .grid img{
     margin-left: -44px;
@@ -52,6 +73,14 @@
         /*margin-top: %;*/
     }
 
+
+    .btn-block {
+        position: absolute;
+        top: -9%;
+        left: 24%;
+        text-align: center;
+    }
+
     .grid{
         margin-left: 17px;
         display: inline-grid;
@@ -74,8 +103,8 @@
 }
 
 .grid{
-    margin-left: 35px;
-    margin-top: -4%;
+    margin-left: 95px;
+    margin-top: -15%;
     display: inline-grid;
 }
 .box{
@@ -90,7 +119,7 @@
 }
 
 .grid img{
-    margin-left: -81px;
+    margin-left: -44px;
     margin-top: 98px;
 }
 
