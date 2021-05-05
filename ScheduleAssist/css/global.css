@@ -1,0 +1,185 @@
+
+*{
+    font-family: "Trirong", serif;
+    height: auto;
+    width: auto;
+    margin-left: 25px;
+}
+
+
+
+#hamnav {
+    width: 8%;
+    background: #000;
+
+    /* Optional */
+    position: sticky;
+    top: 0;
+    margin-left: -50px;
+}
+
+/* Hide Hamburger */
+#hamnav label, #hamburger { display: none; }
+
+/* Horizontal Menu Items */
+#hamitems {     width: 134px;
+    position: relative;
+    height: 800px;
+    margin-left: -25px;
+    background: black;
+    z-index: 100;
+}
+
+#hamitems a {
+    width: 40%;
+    left: 3%;
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+    /* text-align: center; */
+    font-size: 22px;
+    position: absolute;
+}
+#hamitems a:hover {
+    background: #2c5b76;
+}
+/*    #btBack{
+        visibility: hidden;
+    }
+    #homePage{visibility: hidden}*/
+
+/* [ON SMALL SCREENS] */
+
+.hamnav{
+    /*visibility: hidden;*/
+    /*position: fixed;*/
+    position: relative;
+
+    display: inline-block;
+
+    width: 120px;
+    height: 800px;
+    background: #000000;
+    font-size: 12px;
+    z-index: 100;
+}
+#hamnav li{
+    margin-bottom: 65px;
+}
+.bodyPage{
+    margin-left: 6%;
+    margin-top: -39%;
+}
+
+
+.prifileImg{
+    margin-top: 20px;
+    width: 84px;
+    height: 70px;
+}
+
+#selected{
+    background-image:url("../images/selected.svg");
+    display: block;
+    background-repeat: no-repeat;
+    background-size: contain;
+    /*line-height: 20px;*/
+}
+#selected:not(.disable):hover{
+
+}
+#selected{
+
+    position: absolute;
+    width: 150px;
+    height: 50px;
+    left: -3px;
+    /*text-align: center;*/
+    font-weight: bold;
+}
+#heyT{
+    position: absolute;
+    margin-bottom: 300px;
+    margin-left: -14px;
+    margin-top: -9%;
+    padding-bottom: 10px;
+    font-size:x-large;
+    font-weight: bolder;
+}
+
+
+/*@media screen and (max-width: 479px){*/
+@media only screen and (min-width:768px) and (max-width: 1024px) {
+    .bodyPage{
+        position: absolute;
+        margin-left: 0px;
+        margin-top: 20%;
+
+    }
+    #hamnav {
+        width: 100%;
+        background: #000;
+
+        /* Optional */
+        position: sticky;
+        top: 0;
+        margin-left: -50px;
+    }
+
+    #heyT{
+        position: absolute;
+        margin-bottom: 300px;
+        margin-left: 110px;
+        margin-top:-19%;
+        padding-bottom: 10px;
+        font-size:x-large;
+        font-weight: bolder;
+    }
+    #hamitems {
+        width: 60px;
+        position: absolute;
+        height: 800px;
+        width:auto;
+        background: black;
+        z-index: 100;
+    }
+
+    /* Show Hamburger Icon */
+    #hamnav label {
+        display: inline-block;
+        color: white;
+        background: #a02620;
+        font-style: normal;
+        font-size: 1.2em;
+        padding: 10px;
+    }
+
+    /* Break down menu items into vertical */
+    #hamitems a {
+        box-sizing: border-box;
+        display: block;
+        width: 100%;
+        text-align: center;
+        border-top: 1px solid #333;
+        margin-left: -9%;
+    }
+    #selected{
+
+        position: absolute;
+        width: 106%;
+        /*padding-top: 1000%;*/
+        height: 30%;
+        left: -18px;
+        text-align: center;
+        font-weight: bold;
+        background-image:url("../images/selected.svg")
+        /*outline-width: 600px;*/
+
+    }
+
+    /* Toggle Show/Hide Menu */
+    #hamitems { display: none; }
+    #hamnav input:checked ~ #hamitems { display: block;
+        margin-left: -10px;
+        position: absolute}
+}

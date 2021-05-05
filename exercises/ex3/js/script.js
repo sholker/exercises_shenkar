@@ -79,8 +79,8 @@ function add_box(){
 
     count++;
     if ( screen.width < 960){
-        $(".grid").width(960/2);
-        $(".grid").height(960/2);
+        $(".grid").width(50);
+        $(".grid").height(50 );
     }
     else {
         $(".grid").width(960 / 3);

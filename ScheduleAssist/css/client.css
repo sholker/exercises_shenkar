@@ -1,0 +1,148 @@
+
+.grid{
+    margin-left: 95px;
+    margin-top: -15%;
+    display: inline-grid;
+}
+.box{
+
+    height:50px;
+    width: 50px;
+    background-color: #ffaff4;
+    margin-left: 17px;
+    background: #FFFFFF;
+    border: 1px solid #000000;
+    box-sizing: border-box;
+}
+
+.grid img{
+    margin-left: -44px;
+    margin-top: 98px;
+}
+
+.box-child{
+
+    margin-top: -61%;
+
+    height: 1px;
+
+    width: 1px;
+
+    margin-left: 22%;
+
+    padding-top: -16%;
+}
+
+
+@media only screen and (min-width:768px) and (max-width: 1024px) {
+    .grid{
+        padding: 10px;
+    }
+    .box{
+
+        width: 50px;
+        height: 50px;
+        background-color: #ffaff4;
+        margin-left: 0px;
+        /*padding-left: 100%;*/
+        background: #FFFFFF;
+        border: 1px solid #000000;
+        box-sizing: border-box;
+        z-index: auto;
+        /*margin-top: %;*/
+    }
+
+    .grid{
+        margin-left: 17px;
+        display: inline-grid;
+    }
+
+    .grid img{
+        width: 48px;
+        height: 48px;
+        margin-block: auto;
+        margin-left: 0px;
+        margin-top: 13px;
+
+        /*padding-left: 100%;*/
+    }
+    .box-child{
+        margin-top: -6%;
+        margin-left: -3%;
+        position: absolute;
+    }
+}
+
+.grid{
+    margin-left: 35px;
+    margin-top: -4%;
+    display: inline-grid;
+}
+.box{
+
+    height:50px;
+    width: 50px;
+    background-color: #ffaff4;
+    margin-left: 17px;
+    background: #FFFFFF;
+    border: 1px solid #000000;
+    box-sizing: border-box;
+}
+
+.grid img{
+    margin-left: -81px;
+    margin-top: 98px;
+}
+
+.box-child{
+
+    margin-top: -61%;
+
+    height: 1px;
+
+    width: 1px;
+
+    margin-left: 22%;
+
+    padding-top: -16%;
+}
+
+
+@media only screen and (min-width:768px) and (max-width: 1024px) {
+    .grid{
+        padding: 10px;
+    }
+    .box{
+
+        width: 50px;
+        height: 50px;
+        background-color: #ffaff4;
+        margin-left: 0px;
+        /*padding-left: 100%;*/
+        background: #FFFFFF;
+        border: 1px solid #000000;
+        box-sizing: border-box;
+        z-index: auto;
+        /*margin-top: %;*/
+    }
+
+    .grid{
+        margin-left: 17px;
+        display: inline-grid;
+    }
+
+    .grid img{
+        width: 48px;
+        height: 48px;
+        margin-block: auto;
+        margin-left: 0px;
+        margin-top: 13px;
+
+        /*padding-left: 100%;*/
+    }
+    .box-child{
+        margin-top: -6%;
+        margin-left: -3%;
+        position: absolute;
+    }
+}

@@ -9,6 +9,21 @@ var today_meetings = [
 var tommorow_meetings = [
     { "id":4,"Title": "meeting_4", "Time": "10:30 AM" },
     { "id":5,"Title": "meeting_5", "Time": "11:00 AM" },
+    { "id":5,"Title": "meeting_5", "Time": "11:00 AM" },
+    { "id":5,"Title": "meeting_5", "Time": "11:00 AM" },
+    { "id":5,"Title": "meeting_5", "Time": "11:00 AM" },
+    { "id":5,"Title": "meeting_5", "Time": "11:00 AM" },
+    { "id":5,"Title": "meeting_5", "Time": "11:00 AM" },
+    { "id":5,"Title": "meeting_5", "Time": "11:00 AM" },
+    { "id":5,"Title": "meeting_5", "Time": "11:00 AM" },
+    { "id":5,"Title": "meeting_5", "Time": "11:00 AM" },
+    { "id":5,"Title": "meeting_5", "Time": "11:00 AM" },
+    { "id":5,"Title": "meeting_5", "Time": "11:00 AM" },
+    { "id":5,"Title": "meeting_5", "Time": "11:00 AM" },
+    { "id":5,"Title": "meeting_5", "Time": "11:00 AM" },
+    { "id":5,"Title": "meeting_5", "Time": "11:00 AM" },
+    { "id":5,"Title": "meeting_5", "Time": "11:00 AM" },
+    { "id":5,"Title": "meeting_5", "Time": "11:00 AM" },
     { "id":6,"Title": "meeting_6", "Time": "20:00 PM" }
 ]
 
@@ -17,9 +32,16 @@ var attention_childs = [
     { "id":1,"Name": "Child_1"},
     { "id":2,"Name": "Child_2"}
 ];
+
+var feedbacks = [
+    { "id":4,"Title": "Feadback_1","value":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vel ipsum et est feugiat imperdiet nec in sapien. In facilisis ex purus!", "Time": "2 minute ago" },
+    { "id":6,"Title": "Feadback_1","value":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vel ipsum et est feugiat imperdiet nec in sapien. In facilisis ex purus!", "Time": "30 minute ago" }
+]
+
+const star_ratting_max = 5;
 function GFG_FUN(list,class_name) {
     var cols = [];
-
+console.log(`create ${class_name}`);
     for (var i = 0; i < list.length; i++) {
         for (var k in list[i]) {
             if (cols.indexOf(k) === -1) {
@@ -80,11 +102,33 @@ function GFG_FUN(list,class_name) {
     el.appendChild(table);
 }
 
+
+
+function Create_ratting(num){
+    for (var i = 1; i <= star_ratting_max; i++) {
+        var star = document.createElement("span");
+        if (i<= num){
+            star.className="fa fa-star";
+        }
+        else{
+            star.className="fa fa-star-o";
+
+        }
+        var el = document.getElementById("star_r");
+        // el.innerHTML = "";
+        el.appendChild(star);
+
+    }
+}
+
+
 $(document).ready(function() {
     document.getElementById("heyT").innerHTML="Hey Steve";
 
     GFG_FUN(today_meetings,"tbl_today");
     GFG_FUN(tommorow_meetings,"tbl_tommorow");
     GFG_FUN(attention_childs,"tbl_attention");
+    Create_ratting(3);
+    GFG_FUN(feedbacks,"tbl_feedbacks");
 
 });

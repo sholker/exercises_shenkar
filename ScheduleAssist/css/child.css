@@ -1,0 +1,32 @@
+#heyT{
+
+}
+
+#description_child{
+    position: absolute;
+    height: 620px;
+    width: 1085px;
+    margin-left: 17px;
+    background: #FFFFFF;
+    border: 1px solid #000000;
+    box-sizing: border-box;
+    top: 27%;
+}
+
+
+
+@media only screen and (min-width:768px) and (max-width: 1024px) {
+    #btBack{
+        visibility: hidden;
+    }
+    #homePage{visibility: hidden}
+
+    #heyT{
+        top:20px;
+    }
+    #description_child{
+
+    }
+
+
+}
