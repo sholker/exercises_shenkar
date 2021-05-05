@@ -6,7 +6,7 @@
 - [ex4_form1(Pokemon)](https://github.com/sholker/exercises_shenkar/tree/main/exercises/ex4)
 - [ex4_form2](https://github.com/sholker/exercises_shenkar/tree/main/exercises/ex4/new.html)
 
-### [Ori Shai & Michal Tmair Project: ScheduleAssist](https://github.com/sholker/exercises_shenkar/tree/main/exercises/ScheduleAssist)
+### [Ori Shai & Michal Tmair Project: ScheduleAssist](https://github.com/sholker/exercises_shenkar/tree/main/ScheduleAssist)
 
 #### Improved	communication	with	children	diagnosed	with	autism
 
