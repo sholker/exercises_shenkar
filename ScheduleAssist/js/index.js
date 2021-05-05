@@ -82,11 +82,12 @@ console.log(`create ${class_name}`);
 
         for (var j = 1; j < cols.length; j++) {
             var cell = trow.insertCell(-1);
-
+            cell.className = "cell";
             // Inserting the cell at particular place
             cell.innerHTML = list[i][cols[j]];
             if(list[i][cols[j]] <= "1 minute" && class_name=="tbl_today"){
                   trow.id="mark";
+
 
 
             }

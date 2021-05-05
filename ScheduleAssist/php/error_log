@@ -1,0 +1,8 @@
+[05-May-2021 21:14:48 UTC] PHP Notice:  Undefined index: email in /home/zgk29jy57r32/public_html/students/2020-2021/web1/dev_222/php/new.php on line 8
+[05-May-2021 21:14:48 UTC] PHP Notice:  Undefined index: city in /home/zgk29jy57r32/public_html/students/2020-2021/web1/dev_222/php/new.php on line 10
+[05-May-2021 21:14:48 UTC] PHP Notice:  Undefined index: gender in /home/zgk29jy57r32/public_html/students/2020-2021/web1/dev_222/php/new.php on line 12
+[05-May-2021 21:14:48 UTC] PHP Notice:  Undefined index: comments in /home/zgk29jy57r32/public_html/students/2020-2021/web1/dev_222/php/new.php on line 17
+[05-May-2021 21:17:38 UTC] PHP Notice:  Undefined index: email in /home/zgk29jy57r32/public_html/students/2020-2021/web1/dev_222/php/new.php on line 8
+[05-May-2021 21:17:38 UTC] PHP Notice:  Undefined index: city in /home/zgk29jy57r32/public_html/students/2020-2021/web1/dev_222/php/new.php on line 10
+[05-May-2021 21:17:38 UTC] PHP Notice:  Undefined index: gender in /home/zgk29jy57r32/public_html/students/2020-2021/web1/dev_222/php/new.php on line 12
+[05-May-2021 21:17:38 UTC] PHP Notice:  Undefined index: comments in /home/zgk29jy57r32/public_html/students/2020-2021/web1/dev_222/php/new.php on line 17

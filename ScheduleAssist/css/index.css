@@ -40,16 +40,15 @@ table{
     overflow-y:scroll;
     width: 466px;
     height: 180px;
-
 }
 
 .tbl_tommorow{
 
     top: 50%;
-    /*left: 20%;*/
+
+    margin-left: 49%;
 }
-.tbl_today{
-}
+.tbl_today{margin-left: 1.5%;margin-top: -3%;}
 
 .tbl_attention{
 
@@ -58,9 +57,13 @@ table{
 .tbl_attention {
     background-color: #FF3823;
     opacity: 0.32;
+    margin-top: 17%;
 }
 .tbl_feedbacks{
 
+    margin-top: 17%;
+
+    margin-left: 49%;
 }
 
 
@@ -75,9 +78,9 @@ h5{
 #star_r{
     position: absolute;
     width: 140px;
-    top:450px;
-    left: 880px;
-    margin-left: 2px;
+    margin-top: 14%;
+    /* margin-left: 880px; */
+    margin-left: 65%;
 }
 #star_r span{
     display: inline-block;
@@ -85,16 +88,15 @@ h5{
     padding: 0px;
 }
 #top_left_title {
-    top: 85px;
-    margin-bottom: 60px;
+    margin-left: 2%;
+    margin-top: -5%;
     width: 247px;
 }
 #top_right_title{
-    left: 762px;
-    top: 85px;
+    margin-left: 49%;
+    margin-top: -5%;
     margin-bottom: 60px;
     width: 247px;
-
 }
 #bottom_left_title{
     top: 430px;
@@ -110,32 +112,43 @@ h5{
 }
 #bottom_right_title{
     top: 430px;
-    left: 762px;
+    margin-left: 59%;
     width: 247px;
     margin-bottom: 60px;
 }
 #mark{
-    position: inherit;
-    width: 511px;
-    height: 69px;
+    width: 40%;
+    height: 25px;
     background: #FEF67F;
     opacity: 0.32;
+    margin-left: -1%;
     border-radius: 40px;
     font-weight: bold;
+    margin-top: -1%;
+}
+.cell{
+    margin-top: 10%;
+}
 
-
+tbody{
+    margin: 10%;
 }
 
 
 @media only screen and (min-width:768px) and (max-width: 1024px) {
     .tbl_today{
         top:35%;
+        margin-bottom: 60px;
+
     }
     .tbl_tommorow{
         top:85%;
+        margin-bottom: 60px;
+
     }
 
     .tbl_attention{
+        margin-bottom: 60px;
 
         visibility: hidden;
 
