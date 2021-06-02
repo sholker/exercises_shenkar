@@ -1,0 +1,21 @@
+{
+  "Levels of autism":
+{
+	"1": {
+		"title": "Requiring Support",
+		"desciption": "A person with ASD level 1 usually is able to speak in full sentences and communicate, but has trouble engaging in back-and-forth conversation with others. They may try to make friends, but not be very successful."
+	},
+
+	"2": {
+		"title": "Requiring Substantial Support",
+		"desciption": "A person diagnosed with ASD level 2 tends to speak in simple sentences and also struggles with nonverbal forms of communication"
+	},
+
+	"3": {
+		"title": "Requiring Very Substantial Support",
+		"desciption": "A person with ASD level 3 will have a very limited ability to speak intelligibly and will rarely initiate interactions. When they do initiate an interaction, they will do so awkwardly. Someone with level 3 will also respond only to very direct social approaches from tother people."
+	}
+
+
+}
+}
