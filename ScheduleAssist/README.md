@@ -24,3 +24,8 @@
 > ![squence_diagram](SDD/sequence_diagram.svg)
 > ![software_diagram](SDD/software_diagram.jpeg)
 > [class_diagram](SDD/class_diagram.pdf)
+> <object data="SDD/class_diagram.pdf" type="application/pdf" width="700px" height="700px">
+    <embed src="SDD/class_diagram.pdf">
+        <p>This browser does not support PDFs. Please download the PDF to view it: <a href="http://yoursite.com/the.pdf">Download PDF</a>.</p>
+    </embed>
+</object>
