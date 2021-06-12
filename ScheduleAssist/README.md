@@ -18,9 +18,9 @@
 >[Website](http://se.shenkar.ac.il/students/2020-2021/web1/dev_222)
 
 - ##### DB Architecture:
-![ERD](SDD/ERD.svg)
-![Json_Structure](SDD/json_structre.svg)
-[json_file](json_levels_autism.json)
-![software_diagram](SDD/software_diagram.jpeg)
-![squence_diagram](SDD/squence_diagram.pdf)
-![class_diagram](SDD/class_diagram.pdf)
+> ![ERD](SDD/ERD.svg)
+> ![Json_Structure](SDD/json_structre.svg)
+> [json_file](json_levels_autism.json)
+> ![software_diagram](SDD/software_diagram.jpeg)
+> [squence_diagram](SDD/sequence_diagram.pdf)
+> [class_diagram](SDD/class_diagram.pdf)
