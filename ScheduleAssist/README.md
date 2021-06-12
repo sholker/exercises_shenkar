@@ -22,5 +22,5 @@
 > ![Json_Structure](SDD/json_structre.svg)
 > [json_file](json_levels_autism.json)
 > ![software_diagram](SDD/software_diagram.jpeg)
-> [squence_diagram](SDD/sequence_diagram.svg)
+> ![squence_diagram](SDD/sequence_diagram.svg)
 > [class_diagram](SDD/class_diagram.pdf)
