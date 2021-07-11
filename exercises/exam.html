@@ -1,0 +1,114 @@
+<!DOCTYPE>
+<html ln="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+
+        * { padding: 0;}
+
+        body{text-aling: center;}
+
+        body{
+            text-align: center;
+            backgroun: #00ff44;
+        }
+
+        header{
+            width: 100%;
+        }
+
+        #logo{
+            background-image:url("../images/logo.png");
+            display: block;
+            background-repeat: no-repeat;
+            background-size: contain;
+            width:90px;
+            height:90px;
+            margin: 0 auto;
+        }
+
+        h1{
+            color:white;
+            background: black;
+        }
+
+        .wapper img{
+            width: 87px;
+            height: 102px;
+
+        }
+
+        label{
+            display: block;}
+        a{
+            color: #ff00ff;
+            font-size: 14px;
+            font-weight: bold;
+            display: block;
+            text-decoration: none;
+        }
+        ul{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            list-style-type: none;
+        }
+        li{
+            text-align:center;
+            margin-left: 8px;
+        }
+
+        a:hover{
+            color: yellow;
+        }
+
+        @media(max-width: 600px){
+            ul{
+                display: block;
+            }
+        }
+    </style>
+
+
+</head>
+
+<header></header>
+    <div id="wapper">
+        <h1>Our Products</h1>
+        <ul>
+            <li>
+                <a herf=".../prod1" target="_blank" >Prod 1</a>
+                <label>price:<span class="price">34</span>$</label>
+                <img src="avatar.png">
+            </li>
+            <li>
+                <a herf=".../prod1" target="_blank">Prod 2</a>
+                <label>price:<span class="price">34</span>$</label>
+                <img src="avatar.png">
+            </li>
+        </ul>
+        <button id="btn">Sum</button>
+        <label>the sum is:</label>
+        <label id="sum"></label>
+
+    </div>
+
+
+
+    <script>
+
+        document.getElementById("btn").onclick = function() {getSum()};
+        function getSum(){
+            var prices = document.getElementsByClassName("price");
+            var i;
+            var sum=0;
+
+            for (i =0; i< prices.length; i++){
+                sum+=parseInt(prices[i].innerHTML);
+            }
+            document.getElementById("sum").innerHTML=sum.toString();
+        }
+    </script>
+</body>
+</html>

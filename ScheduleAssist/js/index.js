@@ -1,4 +1,11 @@
 
+const urlSearchParams = new URLSearchParams(window.location.search);
+const params = Object.fromEntries(urlSearchParams.entries());
+console.log(params);
+console.log("##########");
+
+
+// params['userID']
 var today_meetings = [
     { "id":0,"Title": "meeting_0", "Time": "1 minute" },
     { "id":1,"Title": "meeting_1", "Time": "10:30 AM" },
@@ -123,13 +130,43 @@ function Create_ratting(num){
 }
 
 
-$(document).ready(function() {
-    document.getElementById("heyT").innerHTML="Hey Steve";
+$.ajax({
+    type: "GET",
+    url: 'collect_data.php',
+    success: function (responseText) {
+        user_name = responseText;
+        $(document).ready(function() {
+            document.getElementById("heyT").innerHTML="Hey, " + user_name;
+            // GFG_FUN(today_meetings,"tbl_today");
+            // GFG_FUN(tommorow_meetings,"tbl_tommorow");
+            // GFG_FUN(attention_childs,"tbl_attention");
+            // Create_ratting(3);
+            // GFG_FUN(feedbacks,"tbl_feedbacks");
 
-    GFG_FUN(today_meetings,"tbl_today");
-    GFG_FUN(tommorow_meetings,"tbl_tommorow");
-    GFG_FUN(attention_childs,"tbl_attention");
-    Create_ratting(3);
-    GFG_FUN(feedbacks,"tbl_feedbacks");
-
+        });
+    }
 });
+
+
+$.ajax({
+    type: "GET",
+    url: 'collect_data.php',
+    success: function (responseText) {
+        user_name = responseText;
+        $(document).ready(function() {
+            document.getElementById("heyT").innerHTML="Hey, " + user_name;
+            GFG_FUN(today_meetings,"tbl_today");
+            GFG_FUN(tommorow_meetings,"tbl_tommorow");
+            GFG_FUN(attention_childs,"tbl_attention");
+            Create_ratting(3);
+            GFG_FUN(feedbacks,"tbl_feedbacks");
+
+        });
+    }
+});
+
+
+
+
+
+

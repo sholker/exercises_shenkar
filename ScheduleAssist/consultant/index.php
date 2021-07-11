@@ -1,20 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>ScheduleAssist</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Trirong">
 
-    <link rel="stylesheet" href="css/index.css">
-    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/global.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 
 
-    <script src="js/index.js"></script>
+    <script src="../js/index.js"></script>
 
 </head>
 <body>
+
 <nav id="hamnav">
     <!-- [THE HAMBURGER] -->
     <label for="hamburger">&#9776;</label>
@@ -22,11 +24,11 @@
 
     <!-- [MENU ITEMS] -->
     <div id="hamitems">
-        <img class=prifileImg src="images/Steve.svg">
+        <img class=prifileImg src="../images/Steve.svg">
 
         <ul>
             <li><a  href="#">My Profile</a></li>
-            <li id="selected"><a  href="index.html">Home Page</a></li>
+            <li id="selected"><a  href="index.php">Home Page</a></li>
             <li><a></a></li>
             <li><a  href="clients.html">Clients</a></li>
             <li><a  href="#">Mettings</a></li>
