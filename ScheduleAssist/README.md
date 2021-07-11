@@ -29,6 +29,6 @@
 
 <object data="SDD/SDD_Michal_Tamir_and_Ori_Shinsholker.pdf" type="application/pdf" width="700px" height="700px">
     <embed src="SDD/SDD_Michal_Tamir_and_Ori_Shinsholker.pdf">
-        <p>Software Design Document pdf file: <a href="SDD\SDD_Michal_Tamir_and_Ori_Shinsholker.pdf">Download PDF</a>.</p>
+        <p>Software Design Document pdf file: <a href="SDD/SDD_Michal_Tamir_and_Ori_Shinsholker.pdf">Download PDF</a>.</p>
     </embed>
 </object>
