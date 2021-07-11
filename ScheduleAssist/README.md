@@ -23,12 +23,12 @@
 > [json_file](json_levels_autism.json)
 > ![squence_diagram](SDD/sequence_diagram.svg)
 > ![software_diagram](SDD/software_diagram.jpeg)
-> [class_diagram](SDD\class_diagram.pdf)
+> [class_diagram](SDD/class_diagram.pdf)
 > 
-> [Software Design Document](SDD\SDD_Michal_Tamir_and_Ori_Shinsholker.pdf)
+> [Software Design Document](SDD/SDD_Michal_Tamir_and_Ori_Shinsholker.pdf)
 
-<object data="SDD\SDD_Michal_Tamir_and_Ori_Shinsholker.pdf" type="application/pdf" width="700px" height="700px">
-    <embed src="SDD\SDD_Michal_Tamir_and_Ori_Shinsholker.pdf">
-        <p>Software Design Document pdf file: <a href="SDD\SDD_Michal_Tamir_and_Ori_Shinsholker.pdf">Download PDF</a>.</p>
+<object data="SDD/SDD_Michal_Tamir_and_Ori_Shinsholker.pdf" type="application/pdf" width="700px" height="700px">
+    <embed src="SDD/SDD_Michal_Tamir_and_Ori_Shinsholker.pdf">
+        <p>Software Design Document pdf file: <a href="SDD/SDD_Michal_Tamir_and_Ori_Shinsholker.pdf">Download PDF</a>.</p>
     </embed>
 </object>
