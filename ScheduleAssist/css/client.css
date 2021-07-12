@@ -1,79 +1,178 @@
-#heyT{
 
-    position: absolute;
-    width: 134px;
-    height: 36px;
-
-    font-family: Quicksand;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 26px;
-    line-height: 32px;
-    display: flex;
-    align-items: center;
-    text-align: center;
-    letter-spacing: -0.333333px;
-
-    color: #000000;
+.grid{
+    margin-left: 95px;
+    margin-top: -15%;
+    display: inline-grid;
 }
-#selected {
+.box{
 
-    position: absolute;
-    width: 150px;
-    height: 50px;
-
-    background: #7A7A7A;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-}
-.hamnav {
-
-    position: absolute;
-    width: 134px;
-    height: 800px;
-
-    background: #000000;
-}
-body{
-
-    position: absolute;
-    width: 1280px;
-    height: 800px;
-
+    height:50px;
+    width: 50px;
+    background-color: #ffaff4;
+    margin-left: 17px;
     background: #FFFFFF;
+    border: 1px solid #000000;
+    box-sizing: border-box;
 }
-#btnBack{
-
+.btn-block {
     position: absolute;
-    width: 92px;
-    height: 24px;
-
-    font-family: Quicksand;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 20px;
-    line-height: 25px;
-    display: flex;
-    align-items: center;
+    top: 13%;
+    left: 17%;
     text-align: center;
-    letter-spacing: -0.333333px;
-
-    color: #446CFA;
 }
-#homePage{
+button {
+    width: 150px;
+    padding: 10px;
+    border: none;margin-top: 10px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    background-color: #095484;
+    font-size: 16px;
+    color: #fff;
+    cursor: pointer;
+}
+button:hover {
+    background-color: #0666a3;
+}
 
-    position: absolute;
-    width: 92px;
-    height: 24px;
+.grid img{
+    margin-left: -44px;
+    margin-top: 98px;
+}
 
-    font-family: Quicksand;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 20px;
-    line-height: 25px;
-    display: flex;
-    align-items: center;
-    text-align: center;
-    letter-spacing: -0.333333px;
+.box-child{
 
-    color: #FFFFFF;
+    margin-top: -61%;
+
+    height: 1px;
+
+    width: 1px;
+
+    margin-left: 22%;
+
+    padding-top: -16%;
+}
+
+
+@media only screen and (min-width:768px) and (max-width: 1024px) {
+    .grid{
+        padding: 10px;
+    }
+    .box{
+
+        width: 50px;
+        height: 50px;
+        background-color: #ffaff4;
+        margin-left: 0px;
+        /*padding-left: 100%;*/
+        background: #FFFFFF;
+        border: 1px solid #000000;
+        box-sizing: border-box;
+        z-index: auto;
+        /*margin-top: %;*/
+    }
+
+
+    .btn-block {
+        position: absolute;
+        top: -9%;
+        left: 24%;
+        text-align: center;
+    }
+
+    .grid{
+        margin-left: 17px;
+        display: inline-grid;
+    }
+
+    .grid img{
+        width: 48px;
+        height: 48px;
+        margin-block: auto;
+        margin-left: 0px;
+        margin-top: 13px;
+
+        /*padding-left: 100%;*/
+    }
+    .box-child{
+        margin-top: -6%;
+        margin-left: -3%;
+        position: absolute;
+    }
+}
+
+.grid{
+    margin-left: 95px;
+    margin-top: 0%;
+    display: inline-grid;
+    padding-right: 60px;
+}
+.box{
+
+    height:50px;
+    width: 50px;
+    background-color: #ffaff4;
+    margin-left: 17px;
+    background: #FFFFFF;
+    border: 1px solid #000000;
+    box-sizing: border-box;
+}
+
+.grid img{
+    margin-left: -44px;
+    margin-top: 98px;
+}
+
+.box-child{
+
+    margin-top: -61%;
+
+    height: 210px;
+
+    width: 1px;
+
+    margin-left: 22%;
+
+    padding-top: -16%;
+}
+
+
+@media only screen and (min-width:768px) and (max-width: 1024px) {
+    .grid{
+        padding: 10px;
+    }
+    .box{
+
+        width: 50px;
+        height: 50px;
+        background-color: #ffaff4;
+        margin-left: 0px;
+        /*padding-left: 100%;*/
+        background: #FFFFFF;
+        border: 1px solid #000000;
+        box-sizing: border-box;
+        z-index: auto;
+        /*margin-top: %;*/
+    }
+
+    .grid{
+        margin-left: 17px;
+        display: inline-grid;
+    }
+
+    .grid img{
+        width: 48px;
+        height: 48px;
+        margin-block: auto;
+        margin-left: 0px;
+        margin-top: 13px;
+
+        /*padding-left: 100%;*/
+    }
+    .box-child{
+        margin-top: -6%;
+        margin-left: -3%;
+        position: absolute;
+    }
 }

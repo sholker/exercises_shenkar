@@ -49,7 +49,7 @@
         <div>
             <div id="container">
                 <?php
-                include 'php/get_childs.php'
+                include 'php/get_childs.php';
                 ?>
             </div>
 
