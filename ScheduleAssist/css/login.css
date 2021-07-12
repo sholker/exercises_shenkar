@@ -1,2 +1,52 @@
-body{ font: 14px sans-serif; }
+ body {
+    background-image: url("../images/SA_bg.jpeg");
+    background-color: #cccccc;
+    font: 14px sans-serif;
+}
 .wrapper{ width: 360px; padding: 20px; }
+.signup-form {
+    width: 400px;
+    height: auto;
+    margin-left: 36%;
+    margin-top: 10%;
+}
+.btn-success {
+    color: #fff;
+    background-color: steelblue;
+    border-color: black;
+}
+ .robert-collins-tvc5imo5pxk-unsplash-1 {
+     width: 558px;
+     height: 466px;
+     opacity: 80%
+ }
+
+ #logo{
+     background-image: url("../images/SA_logo.jpeg");
+     width: 131px;
+     height: 152px;
+ }
+ .heading {
+     width: 360px;
+     height: 50px;
+     color: #000000;
+     font-family: "Quicksand";
+     font-weight: 700;
+     font-size: 36px;
+     text-align: center;
+ }
+ .heading-22 {
+     width: 360px;
+     height: 67px;
+     color: #000000;
+     font-family: "Quicksand";
+     font-weight: 700;
+     font-size: 24px;
+     text-align: center;
+ }
+ .rectangle-3 {
+     width: 722px;
+     height: 468px;
+     padding: 8px 8px 8px 8px;
+     background: #edf0f4;
+ }

@@ -11,7 +11,7 @@ function createGrid(x) {
                 break;
             name = "Child_${count}"
 
-            $("#container").append(`<div class="grid"><div class='box-child'><a href="child.html?name=Child_${count}"><img src="images/${name}.svg"  onerror="this.src='images/Kylie.svg'"></a></div>Child_${count}</div>`);
+            $("#container").append(`<div class="grid"><div class='box-child'><a href="child.html?name=Child_${count}"><img src="images/${name}.svg"  onerror="this.src='../images/Kylie.svg'"></a></div>Child_${count}</div>`);
 
             // $("#container").append("<div class='grid'></div>");
         }

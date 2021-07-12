@@ -7,7 +7,7 @@ console.log("##########");
 
 // params['userID']
 var today_meetings = [
-    { "id":0,"Title": "meeting_0", "Time": "1 minute" },
+    { "id":0,"Title": "meeting_0", "Ti me": "1 minute" },
     { "id":1,"Title": "meeting_1", "Time": "10:30 AM" },
     { "id":2,"Title": "meeting_2", "Time": "11:00 AM" },
     { "id":3,"Title": "meeting_3", "Time": "20:00 PM" }
@@ -46,69 +46,78 @@ var feedbacks = [
 ]
 
 const star_ratting_max = 5;
-function GFG_FUN(list,class_name) {
-    var cols = [];
-console.log(`create ${class_name}`);
-    for (var i = 0; i < list.length; i++) {
-        for (var k in list[i]) {
-            if (cols.indexOf(k) === -1) {
 
-                // Push all keys to the array
-                cols.push(k);
-            }
-        }
-    }
-
-    // Create a table element
-    var table = document.createElement("table");
-    table.className=class_name;
-    // Create table row tr element of a table
-    var tr = table.insertRow(-1);
-    console.log(cols);
-
-    // for (var i = 0; i < cols.length; i++) {
-    //     // Create the table header th element
-    //     // var theader = document.createElement("th");
-    //     // theader.innerHTML = cols[i];
-    //     //
-    //     // // Append columnName to the table row
-    //     // tr.appendChild(theader);
-    // }
-
-    // Adding the data to the table
-    for (var i = 0; i < list.length; i++) {
-
-        // Create a new row
-        trow = table.insertRow(-1);
-
-        var ln = document.createElement("a");
-        var id = list[i[0]];
-        // ln.innerHTML="    b\t";
-        ln.className="metting_link";
-        ln.href = `#metting?id=${id}`;
-
-        for (var j = 1; j < cols.length; j++) {
-            var cell = trow.insertCell(-1);
-            cell.className = "cell";
-            // Inserting the cell at particular place
-            cell.innerHTML = list[i][cols[j]];
-            if(list[i][cols[j]] <= "1 minute" && class_name=="tbl_today"){
-                  trow.id="mark";
-
-
-
-            }
-        }
-        var cell = trow.insertCell(-1);
-        // cell.innerHTML ="link";
-        cell.appendChild(ln);
-        // cell.href=`metting?id=${id}`;
-    }
-    // Add the newely created table containing json data
+function tableCreate_meeting(list,class_name) {
     var el = document.getElementById("container");
-    // el.innerHTML = "";
-    el.appendChild(table);
+    var tbl = document.createElement('table');
+    tbl.className=class_name;
+    tbl.style.width = '100%';
+    // tbl.setAttribute('border', '1');
+    var tbdy = document.createElement('tbody');
+    for (var i = 0; i < list.length; i++) {
+        var tr = document.createElement('tr');
+        // for (var j = 0; j < 2; j++) {
+            if (i == list.length && j == 1) {
+                break
+            } else {
+                var td = document.createElement('td');
+                td.innerHTML = list[i]['title'];
+                var td2 = document.createElement('td');
+                td2.innerHTML = list[i]['date'];
+
+                td.appendChild(document.createTextNode('\u0020'))
+                i == 1 && j == 1 ? td.setAttribute('rowSpan', '2') : null;
+                tr.appendChild(td)
+
+                td2.appendChild(document.createTextNode('\u0020'))
+                i == 1 && j == 1 ? td.setAttribute('rowSpan', '2') : null;
+                tr.appendChild(td2)
+            }
+        // }
+        tbdy.appendChild(tr);
+    }
+    tbl.appendChild(tbdy);
+    el.appendChild(tbl);
 }
+function tableCreate_childs(list,class_name) {
+    var el = document.getElementById("container");
+    var tbl = document.createElement('table');
+    tbl.className=class_name;
+    tbl.style.width = '100%';
+    // tbl.setAttribute('border', '1');
+    var tbdy = document.createElement('tbody');
+    for (var i = 0; i < list.length; i++) {
+        var tr = document.createElement('tr');
+        // for (var j = 0; j < 2; j++) {
+        if (i == list.length && j == 1) {
+            break
+        } else {
+            var td = document.createElement('td');
+            td.innerHTML = list[i]['f_name'];
+            var td2 = document.createElement('td');
+            td2.innerHTML = list[i]['l_name'];
+            var td3 = document.createElement('td');
+            td3.innerHTML = list[i]['cons_yaer_autism_lvl'];
+
+            td.appendChild(document.createTextNode('\u0020'))
+            i == 1 && j == 1 ? td.setAttribute('rowSpan', '2') : null;
+            tr.appendChild(td)
+
+            td2.appendChild(document.createTextNode('\u0020'))
+            i == 1 && j == 1 ? td.setAttribute('rowSpan', '2') : null;
+            tr.appendChild(td2)
+
+            td3.appendChild(document.createTextNode('\u0020'))
+            i == 1 && j == 1 ? td.setAttribute('rowSpan', '2') : null;
+            tr.appendChild(td3)
+        }
+        // }
+        tbdy.appendChild(tr);
+    }
+    tbl.appendChild(tbdy);
+    el.appendChild(tbl);
+}
+
 
 
 
@@ -132,41 +141,105 @@ function Create_ratting(num){
 
 $.ajax({
     type: "GET",
-    url: 'collect_data.php',
+    url: 'php/get_name.php',
     success: function (responseText) {
         user_name = responseText;
         $(document).ready(function() {
             document.getElementById("heyT").innerHTML="Hey, " + user_name;
-            // GFG_FUN(today_meetings,"tbl_today");
-            // GFG_FUN(tommorow_meetings,"tbl_tommorow");
-            // GFG_FUN(attention_childs,"tbl_attention");
-            // Create_ratting(3);
-            // GFG_FUN(feedbacks,"tbl_feedbacks");
+
 
         });
+    }
+});
+
+$.ajax({
+    type: "GET",
+    url: 'php/get_today_meetings.php',
+    success: function (responseText) {
+        data = JSON.parse(responseText);
+        // alert(responseText);
+        if (data == "Rows Empty") {
+            lb =document.createElement("label");
+            lb.innerText="No Meetings";
+            lb.className = "tbl_today";
+            document.getElementById("container").appendChild(lb);
+return;
+        }
+        else {
+
+            tableCreate_meeting([data], "tbl_today");
+        }
+
     }
 });
 
 
 $.ajax({
     type: "GET",
-    url: 'collect_data.php',
+    url: 'php/get_tommorow_meeting.php',
     success: function (responseText) {
-        user_name = responseText;
-        $(document).ready(function() {
-            document.getElementById("heyT").innerHTML="Hey, " + user_name;
-            GFG_FUN(today_meetings,"tbl_today");
-            GFG_FUN(tommorow_meetings,"tbl_tommorow");
-            GFG_FUN(attention_childs,"tbl_attention");
-            Create_ratting(3);
-            GFG_FUN(feedbacks,"tbl_feedbacks");
+        data = JSON.parse(responseText);
+        // alert(responseText);
+        if (data == "Rows Empty") {
+            lb =document.createElement("label");
+            lb.innerText="No Meetings";
+            lb.className = "tbl_tommorow";
+            document.getElementById("container").appendChild(lb);
 
-        });
+
+            return;
+        }
+        else {
+
+            tableCreate_meeting([data], "tbl_tommorow");
+        }
+
     }
 });
 
+$.ajax({
+    type: "GET",
+    url: 'php/get_attention_child.php',
+    success: function (responseText) {
+        data = JSON.parse(responseText);
+        // alert(responseText);
+        if (data == "Rows Empty") {
+            lb =document.createElement("label");
+            lb.innerText="No Childs";
+            lb.className = "tbl_attention";
+            document.getElementById("container").appendChild(lb);
 
 
+            return;
+        }
+        else {
 
+            tableCreate_childs([data], "tbl_attention");
+        }
+
+    }
+});
+
+$.ajax({
+    type: "GET",
+    url: 'php/culc_ratting.php',
+    success: function (responseText) {
+        data = JSON.parse(responseText);
+        // alert(responseText);
+        if (data == "Rows Empty") {
+            lb =document.createElement("label");
+            lb.innerText="No Childs";
+            lb.className = "tbl_attention";
+            document.getElementById("container").appendChild(lb);
+
+
+            return;
+        }
+        else {
+            Create_ratting(parseInt(data));
+        }
+
+    }
+});
 
 

@@ -2,16 +2,19 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+
     <title>Title</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Trirong">
 
-    <link rel="stylesheet" href="../css/child.css">
+    <link rel="stylesheet" href="../css/client.css">
     <link rel="stylesheet" href="../css/global.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 
-    <script type="text/javascript" src="jquery-1.11.3.min.js"></script>
+<!--    <script type="text/javascript" src="jquery-1.11.3.min.js"></script>-->
 
-    <script src="../js/child.js"></script>
+    <script src="../js/client.js"></script>
 
 </head>
 <body>
@@ -24,10 +27,10 @@
     <div id="hamitems">
         <img class=prifileImg src="../images/Steve.svg">
 
-        <ul>
+        <ul id="ul_id">
             <li><a  href="#">My Profile</a></li>
             <li><a  href="index.php">Home Page</a></li>
-            <li id="selected"><a  href="clients.html">Clients</a></li>
+            <li id="selected"><a  href="clients.php">Clients</a></li>
             <li><a></a></li>
 
             <li><a  href="#">Mettings</a></li>
@@ -38,12 +41,23 @@
 </nav>
 
 <div class="bodyPage">
-    <h1 id="heyT"></h1>
-<div id="description_child"></div>
+    <div>
+        <h1 id="heyT"></h1>
+        <div class="btn-block">
+            <a href="new.php"> <button type="add">Add New Client</button></a>
+        </div>
+        <div>
+            <div id="container">
+                <?php
+                include 'php/get_childs.php'
+                ?>
+            </div>
+
+        </div>
+
+    </div>
 </div>
 
-<a href="index.php" id="homePage"></a>
-<a href="javascript:history.back()" id="btBack">Go Back</a>
-<footer></footer>
+
 </body>
 </html>

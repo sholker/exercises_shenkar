@@ -30,7 +30,7 @@
             <li><a  href="#">My Profile</a></li>
             <li id="selected"><a  href="index.php">Home Page</a></li>
             <li><a></a></li>
-            <li><a  href="clients.html">Clients</a></li>
+            <li><a  href="clients.php">Clients</a></li>
             <li><a  href="#">Mettings</a></li>
             <li><a  href="#">Settings</a></li>
 

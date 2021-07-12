@@ -17,7 +17,13 @@ if(isset($_POST['save']))
         $_SESSION["First_Name"]=$row['f_name'];
         $_SESSION["Last_Name"]=$row['l_name'];
         $_SESSION["type"]=$row['type'];
-        header("Location: consultant/index.php?userID=".$_SESSION['ID']);
+        if ($row['type'] == 1) {
+            header("Location: consultant/index.php?userID=" . $_SESSION['ID']);
+        }
+        else{
+            header("Location: child/index.php?userID=" . $_SESSION['ID']);
+
+        }
     }
     else
     {

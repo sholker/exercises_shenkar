@@ -11,7 +11,7 @@ session_start();
     <title>Welcome to Finance Portal</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="assests/css/style.css">
+    <link rel="stylesheet" href="css/login.css">
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
@@ -19,6 +19,8 @@ session_start();
 </head>
 <body>
 <div class="signup-form">
+    <h1 class="heading">ScheduleAssist</h1>
+    <h2 class="heading-22">Words are not the only way to communicate</h2>
     <form action="loginProcess.php" method="post" enctype="multipart/form-data">
         <h2>Login</h2>
         <p class="hint-text">Enter Login Details</p>
@@ -31,7 +33,6 @@ session_start();
         <div class="form-group">
             <button type="submit" name="save" class="btn btn-success btn-lg btn-block">Login</button>
         </div>
-        <div class="text-center">Don't have an account? <a href="register.php">Register Here</a></div>
     </form>
 </div>
 </body>
