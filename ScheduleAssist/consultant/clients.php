@@ -44,7 +44,7 @@
     <div>
         <h1 id="heyT"></h1>
         <div class="btn-block">
-            <a href="new.php"> <button type="add">Add New Client</button></a>
+            <a href="new.php?user_id=<?php echo $_SESSION['ID']?>"> <button type="add">Add New Client</button></a>
         </div>
         <div>
             <div id="container">

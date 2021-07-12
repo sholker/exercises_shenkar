@@ -1,30 +1,37 @@
 <?php
     include '../../config.php';
 // Check input errors before inserting in database
-if(empty($username_err) && empty($password_err) && empty($confirm_password_err)){
 
-    $f_name, $l_name, $password
+    $id = $_POST['id'];
+    $f_name = $_POST['f_name'];
+    $l_name = $_POST['l_name'];
+    $password = $_POST['password'];
+    $name_parent = $_POST['name_parent'];
+    $phone = $_POST['phone'];
+    $gender = $_POST['gender'];
+    $autist_lvl = $_POST['autist_lvl'];
+    $email = $_POST['email'];
+    $description = $_POST['description'];
+    $title = $_POST['metting_title'];
+    $date = $_POST['date_metting'];
+
+$cons_id = $_SESSION['ID'];
 // Prepare an insert statement
-$sql = "INSERT INTO tb_user_222_user VALUES (?, ?)";
+$sql1 = "INSERT INTO tb_user_222_user VALUES ('$id','$f_name',2,'$phone','$password','$gender','$name_parent',$autist_lvl,'$l_name','$email','$description')";
+$sql2 = "INSERT INTO tbl_user_222_metting VALUES ('$title','$date', '$cons_id')";
 
-if($stmt = mysqli_prepare($link, $sql)){
-// Bind variables to the prepared statement as parameters
-mysqli_stmt_bind_param($stmt, "ss", $param_username, $param_password);
 
-// Set parameters
-$param_username = $username;
-$param_password = password_hash($password, PASSWORD_DEFAULT); // Creates a password hash
+    if ($conn->query($sql1) === TRUE) {
+        mysqli_query($conn, sql2);
+        $meetingid = mysqli_insert_id($conn);
+        $sql3="INSERT INTO tbl_user_222_Client_2_cons VALUES ('$id','$cons_id','$meetingid')";
+        $conn->query($sql3);
+        echo "New Child added";
+    } else {
+        echo "Error: " . $sql1 . "<br>" . $conn->error;
+    }
 
-// Attempt to execute the prepared statement
-if(mysqli_stmt_execute($stmt)){
-// Redirect to login page
-header("location: login.php");
-} else{
-echo "Oops! Something went wrong. Please try again later.";
-}
+    $conn->close();
 
-// Close statement
-mysqli_stmt_close($stmt);
-}
-}
+
 ?>

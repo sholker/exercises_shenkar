@@ -1,6 +1,6 @@
 
 <?php
-include '../../config.php';
+include '../config.php';
 //echo $_GET['user_id'];
 session_start();
 

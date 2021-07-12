@@ -65,10 +65,19 @@
         <div>
 
                     <div id="container">
+                        <table>
+                            <thead>
+                            <tr>
+                                <td>Id</td>
+                                <td>Name</td>
+                            </tr>
+                            </thead>
+                            <tbody>
                         <?php
                         include 'php/get_mettings.php';
                         ?>
-
+                            </tbody>
+                        </table>
                     </div>
                 </div>
             </div>
