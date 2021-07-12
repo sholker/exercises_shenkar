@@ -26,9 +26,9 @@ $sql2 = "INSERT INTO tbl_user_222_metting VALUES ('$title','$date', '$cons_id')"
         $meetingid = mysqli_insert_id($conn);
         $sql3="INSERT INTO tbl_user_222_Client_2_cons VALUES ('$id','$cons_id','$meetingid')";
         $conn->query($sql3);
-        echo "New Child added";
+        alert("New Child added");
     } else {
-        echo "Error: " . $sql1 . "<br>" . $conn->error;
+        alert("Error: " . $sql1 . "<br>" . $conn->error);
     }
 
     $conn->close();

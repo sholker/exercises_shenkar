@@ -29,9 +29,8 @@
 
         <ul id="ul_id">
             <li><a  href="#">My Profile</a></li>
-            <li><a  href="index.php">Home Page</a></li>
+            <li><a  href="index.php">Home</a></li>
             <li id="selected"><a  href="clients.php">Clients</a></li>
-            <li><a></a></li>
 
             <li><a  href="#">Mettings</a></li>
             <li><a  href="#">Settings</a></li>

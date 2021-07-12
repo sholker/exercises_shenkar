@@ -42,16 +42,6 @@
 
             <li><a href="index.php">Home Page</a></li>
 
-            <li><a></a></li>
-
-            <li id="selected"><a href="clients.php">Clients</a></li>
-
-            <li><a href="#">Mettings</a></li>
-
-            <li><a href="#">Settings</a></li>
-
-
-
         </ul>
 
     </div>
