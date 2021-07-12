@@ -14,7 +14,7 @@
 
 <!--    <script type="text/javascript" src="jquery-1.11.3.min.js"></script>-->
 
-    <script src="../js/client.js"></script>
+    <script src="../js/script.js"></script>
 
 </head>
 <body>

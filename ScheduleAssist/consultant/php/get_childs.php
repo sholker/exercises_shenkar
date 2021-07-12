@@ -24,7 +24,9 @@ if ($_SESSION['ID']) {
             $name = $row['f_name'];
             console.log($id);
             console.log($name);
-            echo '<label>'. $name . '</label>';
+            echo '<div class="grid"><div class="box-child">' .
+                '<a href="child.php?user_id='. $id . '">
+<img src="../images/' . $name . '.svg" onerror="this.src=\'../images/Kylie.svg\'">' . '</a></div>' . $name . '</div>';
 //echo '<div class="grid"><div class="box-child"><a href="child.html?child_id=' .$id . '"><img src="../images/Kylie.svg" onerror="this.src='../images/Kylie.svg'"></a></div>'. $name .'</div>';
 
 

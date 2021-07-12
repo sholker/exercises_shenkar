@@ -1,0 +1,42 @@
+// var count = 0 ;
+//
+// function createGrid(x) {
+//     console.log(count);
+//     // name="Kylie";
+//     while (count < x){
+//         for (var columns = 0; columns < 3; columns++) {
+//             count++;
+//
+//             if (count > x)
+//                 break;
+//             name = "Child_${count}"
+//
+//             $("#container").append(`<div class="grid"><div class='box-child'><a href="child.html?name=Child_${count}"><img src="images/${name}.svg"  onerror="this.src='../images/Kylie.svg'"></a></div>Child_${count}</div>`);
+//
+//             // $("#container").append("<div class='grid'></div>");
+//         }
+//     }
+//     if ( screen.width < 960){
+//         $(".grid").width(960 / 19.2);
+//         $(".grid").height(960 / 19.2);
+//     }
+//     else {
+//         $(".grid").width(960 / 5);
+//         $(".grid").height(960 / 5);
+//     }
+// }
+
+
+
+$.ajax({
+    type: "GET",
+    url: '../php/get_name.php',
+    success: function (responseText) {
+        user_name = responseText;
+        $(document).ready(function() {
+            document.getElementById("heyT").innerHTML="Hey, " + user_name;
+
+
+        });
+    }
+});

@@ -139,18 +139,6 @@ function Create_ratting(num){
 }
 
 
-$.ajax({
-    type: "GET",
-    url: 'php/get_name.php',
-    success: function (responseText) {
-        user_name = responseText;
-        $(document).ready(function() {
-            document.getElementById("heyT").innerHTML="Hey, " + user_name;
-
-
-        });
-    }
-});
 
 $.ajax({
     type: "GET",
@@ -228,14 +216,15 @@ $.ajax({
         // alert(responseText);
         if (data == "Rows Empty") {
             lb =document.createElement("label");
-            lb.innerText="No Childs";
-            lb.className = "tbl_attention";
+            lb.innerText="empty";
+            lb.className = "ratting";
             document.getElementById("container").appendChild(lb);
 
 
             return;
         }
         else {
+
             Create_ratting(parseInt(data));
         }
 
