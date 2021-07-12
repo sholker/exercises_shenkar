@@ -79,7 +79,7 @@
 }
 
 #selected{
-    /*background-image:url("../images/selected.svg");*/
+    background-image:url("../images/selected.svg");
     display: block;
     background-repeat: no-repeat;
     background-size: contain;
@@ -97,13 +97,13 @@
     /*text-align: center;*/
     font-weight: bold;
 }
-#heyT {
+#heyT{
     position: absolute;
     margin-bottom: 300px;
     margin-left: -14px;
     margin-top: -9%;
     padding-bottom: 10px;
-    font-size: 30px;
+    font-size:x-large;
     font-weight: bolder;
 }
 

@@ -4,7 +4,7 @@ session_start();
 
 if ($_SESSION['ID']) {
     $id = $_SESSION["ID"];
-    $query = "SELECT a.title title,a.date date FROM tbl_user_222_metting a,  tbl_user_222_Client_2_cons b where b.client_id= '$id' and a.date > CURDATE() -1";
+    $query = "SELECT distinct(a.title) title,a.date date FROM tbl_user_222_metting a,  tbl_user_222_Client_2_cons b where b.client_id= '$id' and a.date > CURDATE() -1";
 //    echo $query;
     $result = mysqli_query($conn, $query);
 //    $result = mysqli_query($connection, $query);

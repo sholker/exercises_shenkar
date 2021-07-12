@@ -29,7 +29,7 @@
 
         <ul id="ul_id">
             <li><a  href="#">My Profile</a></li>
-            <li id="selected"><a  href="index.php">Home</a></li>
+            <li><a  href="index.php">Home</a></li>
             <li><a  href="clients.php">Clients</a></li>
 
             <li><a  href="#">Mettings</a></li>
